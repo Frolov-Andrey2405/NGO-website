@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO</title>
     <link rel="stylesheet" href="./css/style.css"/>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/video.js" defer></script>
     <link rel="icon" href="https://www.svgrepo.com/show/411779/aid.svg" type="image/x-icon">
 </head>
 <body>
@@ -20,7 +21,7 @@
                         <li><a href="#homeSection">Головна</a></li>
                         <li><a href="#aboutSection">Про нас</a></li>
                         <li><a href="#programsSection">Програми</a></li>
-                        <li><a href="Javascript:void(0)">Освіта</a></li>
+                        <li><a href="#educationSection">Освіта</a></li>
                         <li><a href="Javascript:void(0)">Статистика</a></li>
                         <li><a href="Javascript:void(0)">Приєднуйтесь до нас</a></li>
                     </ul>
@@ -111,6 +112,26 @@
                     </div>
                     <button>Пожертвувати</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="educationSection">
+        <video id="videoPlayer" autoplay muted class="videoPlayer">
+            <source src="/video/pupil.mp4" type="video/mp4" />
+            Your browser doesn't support HTML5 video
+        </video>
+        <div class="container">
+            <div class="sectionTitle">Освіта</div>
+            <div class="educationContainer">
+                <h3>
+                    Освіта – ключ до <br>
+                    <strong>КРАЩОГО МАЙБУТНЬОГО</strong>
+                </h3>
+                <p>
+                    Віримо, що кожна дитина має право на якісну освіту. Наша місія - забезпечити доступ дітей, що постраждали від війни, до навчання та розвитку, створюючи умови для їхнього успішного майбутнього.
+                </p>
+                <button>Дослідити зараз</button>
             </div>
         </div>
     </section>
