@@ -376,3 +376,43 @@ header nav ul li a:hover {
     font-size: 14px;
     outline: none;
 }
+
+/* StatisticSection */
+
+.statisticContainer {
+    display: flex;
+    flex-wrap: wrap; /* Разрешает перенос строк для graphContainer */
+}
+
+.graphContainer {
+    width: 100%; /* Ширина графика и текста на всю строку */
+    display: flex;
+    flex-direction: row; /* Изменено на горизонтальное расположение */
+    justify-content: space-between; /* Равномерное распределение между графиком и текстом */
+    align-items: center; /* Выравнивание по центру вертикально */
+    margin-bottom: 20px;
+}
+
+canvas {
+    width: 60%; /* Ширина графика */
+    max-width: 600px; /* Максимальная ширина графика */
+    height: auto;
+}
+
+/* Дополнительные стили для текста */
+.statisticText {
+    width: 35%; /* Ширина текста */
+}
+
+.statisticText h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--themeRed);
+}
+
+.statisticText p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444;
+}

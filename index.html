@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO</title>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <script src="./js/app.js" defer></script>
-    <script src="./js/video.js" defer></script>
-    <link rel="icon" href="https://www.svgrepo.com/show/411779/aid.svg" type="image/x-icon">
+
+    <link rel="icon" href="https://www.svgrepo.com/show/411779/aid.svg" type="image/x-icon"> <!-- Website favicon -->
+
+    <link rel="stylesheet" href="./css/style.css"/> <!-- Main stylesheet -->
+
+    <script src="./js/app.js" defer></script> <!-- Main application script -->
+    <script src="./js/video.js" defer></script> <!-- Video-related script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+
+    <!-- Statistics  -->
+    <script src="./js/graphs/deportation.js" defer></script> <!-- Deportation -->
+    <script src="./js/graphs/psychological.js" defer></script> <!-- Psychological -->
+    <script src="./js/graphs/surgical.js" defer></script> <!-- Surgical -->
+    <script src="./js/graphs/conditions.js" defer></script> <!-- Conditions -->
 </head>
 <body>
     <div class="fullContainer banner" id="homeSection">
@@ -22,7 +33,7 @@
                         <li><a href="#aboutSection">Про нас</a></li>
                         <li><a href="#programsSection">Програми</a></li>
                         <li><a href="#educationSection">Освіта</a></li>
-                        <li><a href="Javascript:void(0)">Статистика</a></li>
+                        <li><a href="#statisticSection">Статистика</a></li>
                         <li><a href="Javascript:void(0)">Приєднуйтесь до нас</a></li>
                     </ul>
                 </nav>
@@ -132,6 +143,65 @@
                     Віримо, що кожна дитина має право на якісну освіту. Наша місія - забезпечити доступ дітей, що постраждали від війни, до навчання та розвитку, створюючи умови для їхнього успішного майбутнього.
                 </p>
                 <button>Дослідити зараз</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistic" id="statisticSection">
+        <div class="container">
+            <div class="sectionTitle">Статистика</div>
+            <div class="statisticContainer">
+
+                <div class="graphContainer">
+                    <canvas id="deportation"></canvas>
+                    <div class="statisticText">
+                        <h2>Графік депортації українських дітей до Росії</h2>
+                        <p>
+                            Світ стикається з безжальною статистикою депортації українських дітей до Росії, де кожна цифра - це трагічна історія.
+                            Ця статистика свідчить не лише про числові дані, але і про руйнацію життів, безжальне порушення прав дітей та глибокий гуманітарний кризис.
+                            Ми виражаємо глибоке занепокоєння та відзиваємося до цієї невимовної трагедії, закликаючи до негайних заходів для захисту прав дітей та припинення цього жахливого порушення.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="graphContainer">
+                    <canvas id="psychological"></canvas>
+                    <div class="statisticText">
+                        <h2>Графік Потреби Українських Дітей у Психологічній Допомозі</h2>
+                        <p>
+                            Результати опитування свідчать, що більшість українських дітей постраждали від психотравматизації внаслідок війни.
+                            Ознаки емоційної нестабільності та тривоги присутні у значної кількості дітей, вимагаючи серйозної психологічної підтримки.
+                            Крім психічних труднощів, вплив війни виявляється на фізіологічному рівні та у способах сприйняття світу та взаємодії.
+                            Засвідчуються проблеми зі сном, апетитом та інші відхилення, що ставлять перед суспільством виклик ретельної уваги до потреб цих дітей та невідкладної психологічної допомоги.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="graphContainer">
+                    <canvas id="surgical"></canvas>
+                    <div class="statisticText">
+                        <h2>Графік Збільшення Кількості Дітей, Постраждалих від Агресії РФ</h2>
+                        <p>
+                            За останні роки ситуація з кількістю дітей, що стали жертвами агресії Російської Федерації, погіршилася на шокуючому рівні, вимагаючи негайних заходів та уваги. Це трагічне зростання стало справжньою кризою, де багато дітей опинились в обручі страждань та болю.
+                            Ця ситуація стає ще більш невиправданою, оскільки не лише кількість загиблих збільшилася, але і велика кількість дітей отримали поранення, стаючи подвійною жертвою.
+                            Ці страшні події створюють нагальну потребу в захисті та наданні допомоги цим маленьким беззахисним істотам.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="graphContainer">
+                    <canvas id="conditions"></canvas>
+                    <div class="statisticText">
+                        <h2>Графік Умов та Ситуації Дітей у Військових Конфліктах</h2>
+                        <p>
+                            Військові конфлікти залишають за собою велику кількість дітей, які опинилися у надзвичайно важких умовах. 
+                            Деякі з них переселилися в межах країни або за її межі, втративши свої домівки та стикнувшись з нестабільною ситуацією.
+                            Діти без батьківського піклування стають особливо вразливими, а інші втрачають доступ до освіти, що загострює їхню майбутню перспективу.
+                            У цьому контексті важливо взяти до уваги загальний вплив військових конфліктів на самопочуття та долю дітей, які змушені переживати ці тяжкі обставини.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
