@@ -516,20 +516,6 @@ footer .connectContainer ul li a{
 
 /* Responsive Styles */
 
-/* Common styles for all breakpoints */
-.container {
-    width: 100%;
-    padding: 0 15px;
-}
-
-.banner {
-    background-position-x: 45%;
-}
-
-.banner h1 {
-    width: 70%;
-}
-
 /* Breakpoint: 1140px */
 @media screen and (max-width: 1140px) {
     .education .videoPlayer {
