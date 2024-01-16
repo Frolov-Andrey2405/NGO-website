@@ -23,7 +23,7 @@
 - **[Реферат](/More%20info/Essay.md)**
 - **[Вступ](/More%20info/Introduction.md)**
 - **[Аналіз предметної області](/More%20info/Analyzing_the_subject_area.md)**
-
+- **[Вибір методів для аналізу предметної області](/More%20info/Selection_of_methods.md)**
 
 ## Представлення наявних графіків
 
