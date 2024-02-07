@@ -26,6 +26,7 @@
 - **[Вибір методів для аналізу предметної області](/More%20info/Selection_of_methods.md)**
 - **[Обгрунтування вибору середовища](/More%20info/Justification_for_selection_of_the_environment.md)**
 - **[Представлення результатів програмної реалізації](/More%20info/Presentation_results_of_program_realization.md)**
+- **[Висновки](/More%20info/Conclusions.md)**
 
 ## Представлення наявних графіків
 
