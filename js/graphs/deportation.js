@@ -1,5 +1,5 @@
-// Data for the diagram
 const data = {
+    // Дані для діаграми
     labels: ['2014', '2022-06', '2022-08', '2022-06', '2022-06', '2023-02', '2023-03', '2023-03'],
     datasets: [
         {
@@ -25,32 +25,32 @@ const data = {
     ],
 };
 
-// Options for the diagram
+// Опції для діаграми
 const options = {
     scales: {
         x: { stacked: true },
         y: { stacked: true },
         yAxes: [
         {
-            type: 'linear', // Common axis for bar
+            type: 'linear', // Спільна вісь для бару
             display: true,
             position: 'left',
             id: 'y-axis-1',
         },
         {
-            type: 'linear', // Line axle
+            type: 'linear', // Лінійна вісь
             display: true,
             position: 'right',
             id: 'y-axis-2',
             gridLines: {
-            drawOnChartArea: false, // Disabling the grid for the line axis
+            drawOnChartArea: false, // Вимкнення сітки для прямої осі
             },
         },
         ],
     },
 };
 
-// Create a chart
+// Створіть діаграму
 const ctx = document.getElementById('deportation').getContext('2d');
 new Chart(ctx, {
     type: 'bar',

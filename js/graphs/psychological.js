@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Data for diagrams
+    // Дані для діаграм
     var data = {
         labels: [
             'Емоційні гойдалки',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }],
     };
 
-    // Options for the chart
+    // Параметри діаграми
     var options = {
         scale: {
             ticks: {
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     };
 
-    // Get the context for drawing a diagram
+    // Отримайте контекст для побудови діаграми
     var ctx = document.getElementById('psychological').getContext('2d');
 
-    // Create a chart
+    // Створіть діаграму
     var psychologicalChart = new Chart(ctx, {
         type: 'polarArea',
         data: data,
